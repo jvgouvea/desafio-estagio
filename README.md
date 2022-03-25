@@ -15,6 +15,7 @@ Desafio referente a vaga de estágio Front-end na empresa Second Mind, o objetiv
 
 ## 📋 Imagens
 
+![second-git](https://user-images.githubusercontent.com/86687541/160051280-09fe6ba3-ad06-4ee5-945b-2aaa3efd36e6.png)
 
 ## ✒️ Autores
 
