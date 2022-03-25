@@ -1,0 +1,36 @@
+.clientes-bg .container {
+  max-width: 1400px;
+}
+
+.clientes {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.clientes h2 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.clientes-lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px 80px;
+  align-items: center;
+}
+
+.clientes-lista img {
+  margin: 0 auto;
+}
+
+.logo-brain {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .clientes-lista {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}

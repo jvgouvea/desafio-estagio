@@ -1,0 +1,128 @@
+.header-bg {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 1000;
+  box-shadow: 0px 5px 8px -7px #c2c2c2;
+}
+
+.logo-azul {
+  display: none;
+}
+
+.header {
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-logo {
+  width: 200px;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header-menu a::after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color: var(--cor-p0);
+  transition: 0.3s;
+}
+
+.header-menu a:hover::after {
+  width: 100%;
+}
+
+/* Menu Mobile */
+
+#btn-mobile {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .header-menu a:hover::after {
+    width: 0;
+  }
+
+  .header-menu a {
+    color: var(--cor-12);
+  }
+
+  #btn-mobile {
+    display: block;
+    padding: 10px;
+    border: none;
+    background: none;
+  }
+
+  #btn-mobile.hamburguer-fundo {
+    background-color: var(--cor-p0);
+    border-radius: 50%;
+  }
+
+  .hamburguer {
+    content: "";
+    display: block;
+    background: url(/img/icones/menu-mobile.svg) center no-repeat;
+    width: 24px;
+    height: 24px;
+  }
+
+  #nav.ativo .hamburguer {
+    background: url(/img/icones/close-menu.svg) center no-repeat;
+  }
+
+  .header-menu {
+    display: none;
+    background-color: var(--cor-2);
+    position: absolute;
+    width: 100%;
+    top: 68.47px;
+    right: 0px;
+    z-index: 1000;
+    box-shadow: 0px -2px 8px -7px #c2c2c2;
+  }
+
+  .header-scroll .header-menu li a {
+    color: var(--cor-12);
+  }
+
+  #nav.ativo .header-menu {
+    display: block;
+  }
+
+  .header-menu li {
+    padding: 16px 0px;
+    margin: 0 16px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+}
+
+/* Javascript scroll Header */
+
+.header-bg.header-scroll {
+  background-color: var(--cor-2);
+}
+
+.header-scroll .logo-azul {
+  display: block;
+}
+.header-scroll .logo-branco {
+  display: none;
+}
+
+.header-scroll .header-menu a {
+  color: var(--cor-12);
+}
+
+.header-scroll .header-menu a::after {
+  background-color: var(--cor-p3);
+}

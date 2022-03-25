@@ -1,0 +1,57 @@
+.main {
+  display: grid;
+  align-items: center;
+  height: 100vh;
+  background: url(/img/iniciobg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.main-conteudo {
+  text-align: center;
+  justify-self: center;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.main-conteudo h1 {
+  margin-bottom: 20px;
+}
+
+.main-conteudo p {
+  margin-bottom: 30px;
+  max-width: 48ch;
+}
+
+.main-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.main-links a {
+  display: block;
+  padding: 12px 24px;
+  border-radius: 4px;
+}
+
+.main-links a:first-child {
+  background-color: var(--cor-p0);
+}
+.main-links a:first-child:hover {
+  background-color: var(--cor-p1);
+}
+
+.main-links a:last-child {
+  background-color: var(--cor-p3);
+}
+.main-links a:last-child:hover {
+  background-color: var(--cor-p4);
+}
+
+@media (max-width: 800px) {
+  .main-links a {
+    padding: 12px 24px;
+  }
+}
