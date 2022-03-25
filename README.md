@@ -4,7 +4,7 @@ Desafio referente a vaga de estágio Front-end na empresa Second Mind, o objetiv
 
 ## 📌Acesso
 
-* [Link para acesso ao site](#) 
+* [Link para acesso ao site](https://desafio-estagio.vercel.app/) 
 
 ## 🛠️ Construído com
 
